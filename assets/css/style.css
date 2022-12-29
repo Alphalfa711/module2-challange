@@ -10,15 +10,14 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 6rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 body {
@@ -28,8 +27,7 @@ body {
 
 .wrapper {
     /* width: 1152px; */
-    width: 80%;
-    height: 500px;
+    width: 80%;    
     background-color: var(--wrapper-bg-color);
     margin: 4rem auto;
     padding: 2rem;
@@ -39,9 +37,9 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;     
-    /* background-color: #e45447; */
+    justify-content: space-between;         
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .socials li {
@@ -56,12 +54,11 @@ nav {
 
 .socials a:hover svg{
     fill: var(--orange);
-    transition: var(--transition-time);
+    transition: var(--transition-time);    
 }
 
 .nav-btn {
-    padding: .3rem;
-    /* font-size: 1rem; */
+    padding: .3rem;    
     transition: var(--transition-time);
     background-color: transparent;    
     border: none;
@@ -84,3 +81,44 @@ nav {
 .nav-item {
     vertical-align: middle;
 }
+
+/* Hero section of page */
+.hero-wrapper {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+/* Styling hero sections */
+.hero-name {
+    width: 50%;    
+}
+
+.hero-avatar {
+    width: 50%;    
+    text-align: center;    
+}
+
+.hero-avatar img {
+    border-radius: 180px;
+}
+
+/* Hero text section */
+.hero-name > h1, .hero-name > div {
+    margin-left: 70px;
+}
+
+.hero-text {
+    color: #fff;
+    background-color: var(--orange);    
+    padding: .6rem;
+    border-radius: 5px;    
+    width: 280px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-left: 10px;
+    transform: rotate(-4deg);
+    box-shadow: var(--box-shadow);
+}
+
+/* Hero avatar section */
