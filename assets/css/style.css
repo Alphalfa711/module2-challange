@@ -5,11 +5,12 @@
     --orange: #e45447;
     --wrapper-bg-color: #fff;
     --box-shadow: 0 10px 20px -1px rgba(0, 0, 0, 0.24);
+    --inside-shadow: inset 0px 0px 20px -7px rgba(40, 41, 41, 0.24);
     --transition-time: .3s;   
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;    
 }
 
 h1 {
@@ -17,8 +18,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2rem;    
+    margin: 50px 0 20px 0;
+    /* text-decoration: underline var(--orange) .3rem; */
 }
+
+h3 {
+    font-size: 1.5rem;
+    }
 
 body {
     color: var(--font-color);
@@ -31,15 +38,15 @@ body {
     background-color: var(--wrapper-bg-color);
     margin: 4rem auto;
     padding: 2rem;
-    border-radius: 5px;
-    box-shadow: var(--box-shadow)
+    border-radius: 10px; 
+    box-shadow: var(--box-shadow);
 }
 
 nav {
     display: flex;
     justify-content: space-between;         
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px;    
 }
 
 .socials li {
@@ -54,7 +61,7 @@ nav {
 
 .socials a:hover svg{
     fill: var(--orange);
-    transition: var(--transition-time);    
+    transition: var(--transition-time);        
 }
 
 .nav-btn {
@@ -78,6 +85,10 @@ nav {
     transition: var(--transition-time);
 }
 
+.nav-btn:active {
+    background-color: var(--font-color);
+}
+
 .nav-item {
     vertical-align: middle;
 }
@@ -86,26 +97,30 @@ nav {
 .hero-wrapper {
     display: flex;
     margin-bottom: 50px;
-    align-items: center;
+    align-items: center;    
 }
 
-/* Styling hero sections */
+/* Styling left side of hero sections */
 .hero-name {
     width: 50%;    
-}
-
-.hero-avatar {
-    width: 50%;    
-    text-align: center;    
-}
-
-.hero-avatar img {
-    border-radius: 180px;
 }
 
 /* Hero text section */
 .hero-name > h1, .hero-name > div {
     margin-left: 70px;
+    position: relative;    
+}
+
+/* Stacking hero text */
+.hero-name > h1 {
+    z-index: 2;  
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.24);
+}
+
+.hero-name > div {
+    z-index: 1;    
+    bottom: 5px;
+    /* border-bottom: .2rem solid var(--font-dark); */
 }
 
 .hero-text {
@@ -118,7 +133,91 @@ nav {
     text-align: center;
     margin-left: 10px;
     transform: rotate(-4deg);
+    box-shadow: var(--box-shadow);    
+}
+
+.hero-text p {
+    text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.24);
+}
+
+/* Hero right side / avatar part of section */
+.hero-avatar {
+    width: 50%;    
+    text-align: center;    
+}
+
+.hero-avatar img {
+    border-radius: 180px;
     box-shadow: var(--box-shadow);
 }
 
-/* Hero avatar section */
+/* Styling main section of page */
+
+main section p {
+    line-height: 1.5;
+    padding-left: 25px;
+}
+
+/* About me */
+.inner-box {
+    padding: 1rem 3rem 3rem 3rem;
+    background-color: var(--body-bg-color);
+    border-radius: 10px;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 7rem;    
+}
+
+.skills h3 {    
+    margin: 2rem 0;
+    background-color: var(--orange);
+    color: white;
+    display: inline-block;
+    padding: .5rem;    
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.skills ul {
+    display: flex;        
+    flex-wrap: wrap;
+    gap: 1rem;        
+}
+
+/* Smooth scaling */
+.skills svg {
+    transition: var(--transition-time);
+}
+
+.skills svg:hover {
+    transform: scale(1.5);
+    transition: var(--transition-time);
+}
+
+/* Display black and white icons / Show color on hover */
+.skills svg path, .skills svg g {
+    mix-blend-mode: luminosity;
+}
+
+.skills svg:hover path, .skills svg:hover g {
+    mix-blend-mode: normal;    
+}
+
+
+
+/* Contact part of the page */
+
+
+
+
+/* Footer */
+footer {
+    padding-bottom: 4rem;
+}
+
+
+
+
+
