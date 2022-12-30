@@ -19,13 +19,18 @@ h1 {
 
 h2 {
     font-size: 2rem;    
-    margin: 50px 0 20px 0;
+    /* margin: 50px 0 20px 0; */
+    margin: 4rem 0 2rem 0;
     /* text-decoration: underline var(--orange) .3rem; */
 }
 
 h3 {
     font-size: 1.5rem;
     }
+
+h4 {
+    font-size: 1.3rem;
+}
 
 body {
     color: var(--font-color);
@@ -208,10 +213,40 @@ main section p {
 
 
 /* Contact part of the page */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    
+}
 
 
+.contact-text {
+    width: 100%;         
+    margin-bottom: 1rem;
+}
 
+.contact-text, .contact-info {
+    width: 100%;    
+    text-align: center;    
+}
 
+.contact-info {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+@media screen and (max-width: 900px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+.socials.contact {
+    display: flex;
+    justify-content: center;
+    
+}
 /* Footer */
 footer {
     padding-bottom: 4rem;
