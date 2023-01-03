@@ -19,12 +19,11 @@ h1 {
 
 h2 {
     font-size: 3rem;        
-    margin: 4rem 0 2rem 0;            
-    text-align: center;
+    margin: 4rem 0 2rem 0;                
 }
 
 h3 {
-    font-size: 1.5rem;        
+    font-size: 1.5rem;           
     }
 
 h4 {
@@ -36,20 +35,19 @@ body {
     background-color: var(--body-bg-color);
 }
 
-.wrapper {    
-    width: 80%;    
-    background-color: var(--wrapper-bg-color);
-    margin: 4rem auto;
+.wrapper {        
+    width: 100%;    
+    display: flex;
+    justify-content: center;    
+}
+
+.content-container {
+    max-width: 1200px;
+    background-color: var(--wrapper-bg-color);    
+    margin: 2rem;
     padding: 2rem;
     border-radius: 10px; 
     box-shadow: var(--box-shadow);
-}
-
-@media screen and (max-width: 1000px) {
-    .wrapper {
-        width: 98%;
-    }
-    
 }
 
 nav {
@@ -103,6 +101,7 @@ nav {
     vertical-align: middle;
 }
 
+
 /* Hero section of page */
 .hero-wrapper {
     display: flex;
@@ -113,14 +112,16 @@ nav {
 /* Styling left side of hero sections */
 .hero-name {
     width: 50%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Hero text section */
 .hero-name > h1, .hero-name > div {
-    margin-left: 70px;
+    /* margin-left: 70px; */
     position: relative;    
 }
-
 
 
 /* Stacking hero text */
@@ -132,6 +133,7 @@ nav {
 .hero-name > div {
     z-index: 1;    
     bottom: 5px;
+    left: 20px;
     /* border-bottom: .2rem solid var(--font-dark); */
 }
 
@@ -142,8 +144,7 @@ nav {
     border-radius: 5px;    
     width: 280px;
     font-size: 1.4rem;
-    text-align: center;
-    margin-left: 10px;
+    text-align: center;    
     transform: rotate(-4deg);
     box-shadow: var(--box-shadow);    
 }
@@ -243,16 +244,9 @@ main section p {
     justify-content: space-evenly;       
 }
 
-@media screen and (max-width: 900px) {
-    .contact-info {
-        flex-direction: column;
-    }
-}
-
 .socials.contact {
     display: flex;
     justify-content: center;
-    
 }
 /* Footer */
 footer {
@@ -262,32 +256,29 @@ footer {
 
 
 
-@media screen and (max-width: 1000px) {
-    .hero-name > h1, .hero-name > div {
-        margin-left: 2rem;
+@media screen and (max-width: 768px) {
+    .content-container {
+        margin: 1rem;
     }
-}
-
-@media screen and (max-width: 770px) {
     .hero-wrapper {
         flex-direction: column;
     }    
-    .hero-name > h1, .hero-name > div {
-        margin-left: 0;
-        align-items: center;
+    .contact-info {
+        flex-direction: column;
     }
     .hero-wrapper img {
         width: 200px;
         margin-top: 1rem;
     }
-    .hero-name h1 {
+    /* .hero-name h1 {
         font-size: 5rem;        
-    }
+    } */
     .hero-text {
         width: 180px;
         font-size: .8rem;
-        text-align: center;
-        margin-left: 0;
-    }
+        text-align: center;       
+    }    
+}     
 
-}
+
+
