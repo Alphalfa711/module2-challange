@@ -70,7 +70,7 @@ body {
     column-gap: 8rem;            
 }
 
-/* Orange box with shadow and white text */
+/* title box with shadow */
 .title-container {
     margin: 2rem 0;    
     display: inline-block;
@@ -79,7 +79,7 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-/* box styling */
+/* box styling for title box */
 .orange {
     background-color: var(--orange);
     color: white;
@@ -95,6 +95,7 @@ body {
     color: var(--font-color);
 }
 
+/* Nav style */
 nav {
     display: flex;
     justify-content: space-between;         
