@@ -2,7 +2,7 @@
     --font-color: #585958;    
     --body-bg-color: #f2f2f2;
     --font-dark: #282929;
-    --orange: #e45447;
+    --orange: rgb(228, 84, 71);
     --wrapper-bg-color: #fff;
     --box-shadow: 0 10px 20px -1px rgba(0, 0, 0, 0.24);
     --inside-shadow: inset 0px 0px 20px -7px rgba(40, 41, 41, 0.24);
@@ -24,9 +24,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;           
-    margin: 1rem 0;                
-    }
+    font-size: 1.5rem;               
+}
 
 h4 {
     font-size: 1.3rem;    
@@ -70,6 +69,7 @@ body {
     column-gap: 8rem;            
 }
 
+
 /* title box with shadow */
 .title-container {
     margin: 2rem 0;    
@@ -92,6 +92,7 @@ body {
 
 .light-grey {
     background-color: var(--body-bg-color);
+    /* color: var(--font-color); */
     color: var(--font-color);
 }
 
@@ -205,7 +206,6 @@ nav {
 }
 
 /* Styling main section of page */
-
 /* About me */
 .skills ul {
     display: flex;        
@@ -232,6 +232,53 @@ nav {
 .skills svg:hover path, .skills svg:hover g {
     mix-blend-mode: normal;    
 }
+
+/* Work */
+.project-wrapper {
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    /* background-color: aqua; */
+    /* background-color: #e45447; */
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition-time);    
+}
+
+.starred-project {
+    position: relative;
+}
+
+.starred-project img {
+    width: 100%;    
+    border-radius: 10px;
+    /* margin: 1rem 0; */
+    /* max-height: 250px; */
+    
+}
+
+.project-wrapper:hover {
+    transform: scale(1.02);
+    transition: var(--transition-time);
+}
+
+.project-label {
+    position: absolute;
+    top: 70%;
+    background-color: var(--orange);
+    color: #fff;
+    padding: .5rem 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0 10px 10px 0;
+}
+
+.project-label h5 {
+    font-size: 3vmin;
+    font-weight: normal;    
+}
+
+
+
 
 /* Contact part of the page */
 .contact-container {
