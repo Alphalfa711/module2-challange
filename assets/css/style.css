@@ -31,6 +31,14 @@ h4 {
     font-size: 1.3rem;    
 }
 
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
 p {    
     line-height: 2;
     font-size: 1.2rem;
@@ -49,6 +57,7 @@ body {
     align-items: center;  
 }
 
+/* Main continer */
 .content-container {
     max-width: 1200px;
     background-color: var(--wrapper-bg-color);    
@@ -90,12 +99,6 @@ body {
     color: white;
 }
 
-.light-grey {
-    background-color: var(--body-bg-color);
-    /* color: var(--font-color); */
-    color: var(--font-color);
-}
-
 /* Nav style */
 nav {
     display: flex;
@@ -109,6 +112,7 @@ nav {
     margin-right: .4rem;    
 }
 
+/* Set transition for svg elements */
 .socials svg {
     transition: var(--transition-time);
 }
@@ -233,28 +237,23 @@ nav {
     mix-blend-mode: normal;    
 }
 
+
+
+.project-flex-container {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;    
+}
+
+
+
 /* Work */
 .project-wrapper {
-    width: 100%;
     border-radius: 10px;
-    padding: 1rem;
-    /* background-color: aqua; */
-    /* background-color: #e45447; */
-    background-color: #fff;
+    padding: 1rem;    
     box-shadow: var(--box-shadow);
     transition: var(--transition-time);    
-}
-
-.starred-project {
-    position: relative;
-}
-
-.starred-project img {
-    width: 100%;    
-    border-radius: 10px;
-    /* margin: 1rem 0; */
-    /* max-height: 250px; */
-    
+    margin-bottom: 2rem;
 }
 
 .project-wrapper:hover {
@@ -262,23 +261,41 @@ nav {
     transition: var(--transition-time);
 }
 
+.starred-project {
+    width: 100%;    
+}
+
+.project-thumbnail {
+    width: 49%;       
+}
+
+.project-content {
+    position: relative;
+}
+
+.project-content img {
+    width: 100%;    
+    border-radius: 10px;
+}
+
 .project-label {
     position: absolute;
-    top: 70%;
+    bottom: 10%;
     background-color: var(--orange);
     color: #fff;
-    padding: .5rem 2rem;
     box-shadow: var(--box-shadow);
     border-radius: 0 10px 10px 0;
 }
 
 .project-label h5 {
-    font-size: 3vmin;
     font-weight: normal;    
+    margin: .5rem;
 }
 
-
-
+.project-label h6 {
+    margin: .5rem;
+    font-weight: normal;    
+}
 
 /* Contact part of the page */
 .contact-container {
@@ -302,6 +319,16 @@ nav {
     justify-content: space-evenly; 
 }
 
+.e-mail {
+    transition: var(--transition-time);
+}
+
+.e-mail:hover {
+    color: var(--orange);
+    transition: var(--transition-time);
+}
+
+
 /* Footer */
 footer {
     padding-bottom: 4rem;
@@ -311,34 +338,51 @@ footer {
     text-align: center;
 }
 
-/* Media screen adjustments */
 
+
+/* Media screen adjustments */
 @media screen and (max-width: 768px) {
+    /* Recuse font size for inside p elements */
     p {
         font-size: 1rem;
     }
+    /* Reduce margin for content-container */
     .content-container {
         margin: 1rem;
     }
+    /* Change positioning of elements in hero section */
     #hero-wrapper {
         flex-direction: column;
     }    
-    .contact-info {
-        flex-direction: column;
-    }
+    /* Reduce size of main image */
     #hero-wrapper img {
         width: 200px;
         margin-top: 1rem;
     }
+    /* Reduce size of text in hero section */
     #hero-text {
         width: 180px;
         font-size: .8rem;
         text-align: center;       
     }      
-    .flex-wrap {
+    /* Reduce size of project labels */
+    .project-label h6 {
+        font-weight: normal;    
+    }
+    .project-label h6 {
+        margin: .2rem .5rem;
+        font-size: .7rem;
+        font-weight: normal;    
+    }
+    /* Reduce size of padding in each project container */
+    .project-wrapper {
+        padding: .4rem;    
+    }     
+    /* Change contact-info layout from horizontal to vertical */
+    .contact-info {
         flex-direction: column;
     }
-}     
+}
 
 
 
