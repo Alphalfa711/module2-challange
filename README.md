@@ -8,6 +8,15 @@
 
 [Link to deployed site](https://alphalfa711.github.io/module2-challange/)
 
+##  Comments
+
+```
+Site currenly does not show any real projects and all images in work section are simply a placeholders. 
+Each image is a link that opens google.com website in new tab when clicked.
+
+Links to social profiles and site navigation are fully functional.
+```
+
 ## Description 
 
 ```

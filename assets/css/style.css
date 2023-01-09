@@ -122,6 +122,7 @@ nav {
     transition: var(--transition-time);        
 }
 
+/* Styling nav link buttons */
 .nav-btn {
     padding: .3rem;    
     transition: var(--transition-time);
@@ -237,16 +238,6 @@ nav {
     mix-blend-mode: normal;    
 }
 
-
-
-.project-flex-container {
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: space-between;    
-}
-
-
-
 /* Work */
 .project-wrapper {
     border-radius: 10px;
@@ -261,10 +252,16 @@ nav {
     transition: var(--transition-time);
 }
 
+.project-flex-container {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;    
+}
+/* main project */
 .starred-project {
     width: 100%;    
 }
-
+/* Smaller projects */
 .project-thumbnail {
     width: 49%;       
 }
