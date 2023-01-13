@@ -2,11 +2,27 @@
 
 ## Github repo link
 
-[Github repository](https://github.com/Alphalfa711/module2-challange)
+[Github repository](https://github.com/Alphalfa711/portfolio)
 
 ## Link to deployed website
 
-[Link to deployed site](https://alphalfa711.github.io/module2-challange/)
+[Link to deployed site](https://alphalfa711.github.io/portfolio/)
+
+
+## Deployed projects
+
+### Password Generator
+Website designed to help users generate random and complex passwords 
+based on selected character types
+#### Project Github repo link
+
+[Github repository](https://github.com/Alphalfa711/password-generator)
+
+#### Link to deployed project website
+[Link to deployed site](https://alphalfa711.github.io/password-generator/)
+
+
+
 
 ##  Comments
 
@@ -63,5 +79,5 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./assets/02-advanced-css-homework-demo.gif)
+![portfolio demo](./assets/images/website-mockup.png)
 
