@@ -2,11 +2,11 @@
 
 ## Github repo link
 
-[Github repository](https://github.com/Alphalfa711/portfolio)
+[Github repository](https://github.com/mnyzio/portfolio)
 
 ## Link to deployed website
 
-[Link to deployed site](https://alphalfa711.github.io/portfolio/)
+[Link to deployed site](https://mnyzio.github.io/portfolio/)
 
 
 ## Deployed projects
