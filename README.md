@@ -16,10 +16,10 @@ Website designed to help users generate random and complex passwords
 based on selected character types
 #### Project Github repo link
 
-[Github repository](https://github.com/Alphalfa711/password-generator)
+[Github repository](https://github.com/mnyzio/password-generator)
 
 #### Link to deployed project website
-[Link to deployed site](https://alphalfa711.github.io/password-generator/)
+[Link to deployed site](https://mnyzio.github.io/password-generator/)
 
 
 
